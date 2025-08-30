@@ -9,9 +9,16 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     HeadBar: typeof import('./src/components/HeadBar.vue')['default']
+    IconMailOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconMailOutline']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    YkAvatar: typeof import('@yike-design/ui/es')['YkAvatar']
+    YkB: typeof import('@yike-design/ui/es')['YkB']
+    YkBadge: typeof import('@yike-design/ui/es')['YkBadge']
+    YkBtn: typeof import('@yike-design/ui/es')['YkBtn']
+    YkBu: typeof import('@yike-design/ui/es')['YkBu']
     YkButton: typeof import('@yike-design/ui/es')['YkButton']
     YkSpace: typeof import('@yike-design/ui/es')['YkSpace']
+    YkTheme: typeof import('@yike-design/ui/es')['YkTheme']
   }
 }

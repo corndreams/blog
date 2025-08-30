@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    //redirect: '/order',
+    redirect: '/order',
     component: IndexView,
     children: [
       { 
