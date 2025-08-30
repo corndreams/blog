@@ -1,16 +1,17 @@
 <template>
-  <div>
-    <div>11111</div>
+  <div class="index-view">
+    <menu-bar></menu-bar>
     <router-view></router-view>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts" setup>
+import MenuBar from "@/components/bar/MenuBar.vue";
 
-}
 </script>
 
-<style>
-
+<style lang="less" scoped>
+  .index-view{
+    padding-left: 200px;
+  }
 </style>

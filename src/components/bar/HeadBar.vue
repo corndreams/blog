@@ -1,6 +1,6 @@
 <template>
   <div class="head-bar">
-    <yk-space align="center" size="m" style="cursor: pointer;">
+    <yk-space align="center" size="m" style="cursor: pointer;" @click="backHome">
       <div class="logo">logo</div>
       <span class="name">我的博客</span>
     </yk-space>
@@ -14,9 +14,11 @@
   </div>
 </template>
 
-<script>
-export default {
-
+<script lang="ts" setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const backHome=()=>{
+  router.push('/')
 }
 </script>
 
@@ -36,12 +38,12 @@ export default {
   // justify-items: auto;
 }
 
-.logo{
+.logo {
   height: 24px;
   width: 38px;
 }
 
-.name{
+.name {
   font-size: 20px;
   font-weight: 600;
 }

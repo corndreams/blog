@@ -1,19 +1,19 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import IndexView from '@/views/IndexView.vue'
-import OrderView from '@/views/OrderView.vue'
+import OverView from '@/views/OverView.vue'
   
 const routes = [
   {
     path: '/',
     name: 'home',
-    redirect: '/order',
+    redirect: '/overview',
     component: IndexView,
     children: [
       { 
-        path: '/order', 
-        name: 'order',
-        component: OrderView,
+        path: '/overview', 
+        name: 'overview',
+        component: OverView,
       },
     ]
   },

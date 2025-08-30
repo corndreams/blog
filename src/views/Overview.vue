@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>2222</h1>
+    <h1>总栏</h1>
   </div>
 </template>
 
