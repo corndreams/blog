@@ -13,6 +13,7 @@ declare module 'vue' {
     HeadBar: typeof import('./src/components/bar/HeadBar.vue')['default']
     IconMailOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconMailOutline']
     IconPlusOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconPlusOutline']
+    Line: typeof import('./src/components/echarts/line.vue')['default']
     Menu: typeof import('./src/components/bar/Menu.vue')['default']
     MenuBar: typeof import('./src/components/bar/MenuBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -12,6 +12,6 @@ import MenuBar from "@/components/bar/MenuBar.vue";
 
 <style lang="less" scoped>
   .index-view{
-    padding-left: 200px;
+    padding-left: 180px;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <yk-space dir="vertical">
+  <yk-space dir="vertical" style="padding: 20px;">
     <title-bar></title-bar>
     <gather></gather>
     <yk-space style="width: 100%;">
