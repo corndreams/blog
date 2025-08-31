@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Comment: typeof import('./src/components/reply/comment.vue')['default']
     Datas: typeof import('./src/components/overview/datas.vue')['default']
     Gather: typeof import('./src/components/overview/gather.vue')['default']
     HeadBar: typeof import('./src/components/bar/HeadBar.vue')['default']
@@ -16,6 +17,8 @@ declare module 'vue' {
     Line: typeof import('./src/components/echarts/line.vue')['default']
     Menu: typeof import('./src/components/bar/Menu.vue')['default']
     MenuBar: typeof import('./src/components/bar/MenuBar.vue')['default']
+    Pie: typeof import('./src/components/echarts/pie.vue')['default']
+    Reply: typeof import('./src/components/reply/reply.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TitleBar: typeof import('./src/components/bar/TitleBar.vue')['default']
