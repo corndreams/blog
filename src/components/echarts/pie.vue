@@ -10,6 +10,7 @@ import { PieChart } from 'echarts/charts';
 import {
   TitleComponent,
   TooltipComponent,
+  LegendComponent,
   GridComponent,
   DatasetComponent,
   TransformComponent
@@ -24,6 +25,7 @@ echarts.use([
   GridComponent,
   DatasetComponent,
   TransformComponent,
+  LegendComponent,
   PieChart,
   LabelLayout,
   UniversalTransition,

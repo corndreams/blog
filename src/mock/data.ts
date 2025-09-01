@@ -40,9 +40,9 @@ export const survey = Mock.mock({
     ],
     "website": [
       {
-        "key":'home',
-        "name":'首页',
-        'value|30-120':50
+        "key": 'home',
+        "name": '首页',
+        'value|30-120': 50
       },
       {
         "key": 'project',
@@ -62,4 +62,26 @@ export const survey = Mock.mock({
     ]
   }
 
+})
+
+export const comment = Mock.mock({
+  "code": 200,//200正常、300未通过token验证、500错误、400功能拒绝
+  "data": {
+    "count": 123,
+    "list|123": [{
+      "id|+1": 0,
+      "article": {
+        "id|+1": 0,
+        "title": '@ctitle(3,8)',
+      },
+      "user": {
+        "id|+1": 0,
+        "name": "@ctitle(3,8)",
+        "imgurl": "https://blog.corndreams.ink/wp-content/uploads/2025/01/tou.png"
+      },
+      "comment": "@cparagraph(1,4)",//内容
+      "moment": "@datetime()",//时间
+      "complaint|0-3": 0,//举报数
+    }]
+  }
 })

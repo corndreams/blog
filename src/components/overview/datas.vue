@@ -19,8 +19,8 @@
         </yk-radio-group>
       </div>
       <div style="display: flex;">
-        <PieChart title="设备总数" chart-height="200px" :data="survey.data.device" />
-        <PieChart title="访问总数" chart-height="200px" :data="survey.data.website"/>
+        <PieChart title="设备总数" chart-height="208px" :data="survey.data.device" />
+        <PieChart title="访问总数" chart-height="208px" :data="survey.data.website"/>
       </div>
     </div>
   </yk-space>
@@ -41,15 +41,6 @@ const getVisit=(e:string)=>{
   }
   visitData.value = data
 }
-
-// const visitData = ref(visit.data)
-// const getVisit = (e: string) => {
-//   let data = visit.data;
-//   if (e == 'week') {
-//     data = data.slice(0, 7)
-//   }
-//   visitData.value = data
-// }
 
 onMounted(()=>{
   getVisit(visitRadio.value)

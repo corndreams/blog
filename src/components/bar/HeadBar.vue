@@ -8,6 +8,8 @@
       <yk-badge is-dot>
         <IconMailOutline style="font-size: 20px;" />
       </yk-badge>
+      <yk-avatar img-url="https://www.huohuo90.com:3003/user/6353b034dd4b583975e77fbe.png"
+        style="height: 30px; width: 30px;"></yk-avatar>
       <div><yk-theme style="font-size: 20px;" /></div>
       <yk-button>退出</yk-button>
     </yk-space>

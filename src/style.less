@@ -5,3 +5,21 @@ body{
 #app{
   padding-top:64px;
 }
+
+.card {
+  padding: @space-xl;
+  border-radius: @radius-m;
+  background: @bg-color-l;
+  width: 100%;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: @space-l;
+
+    &-name {
+      .font-l();
+      font-weight: 600;
+    }
+  }
+}
