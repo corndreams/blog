@@ -5,7 +5,7 @@
     </div>
     <yk-scrollbar ref="scrollbar" :height="height" style="padding:0 28px;">
       <yk-space dir="vertical" size="s">
-        <Reply v-for="item in comments" :key="item.id" :content="item" :is-comment="false" @delete="deleteComment" />
+        <Reply v-for="item in comments" :key="item.id" :content="item" :is-comment="true" @delete="deleteComment" />
       </yk-space>
     </yk-scrollbar>
     <yk-space class="comment-pagination">
@@ -22,7 +22,7 @@ import type { CommentProps } from "./index.ts";
 
 const props = withDefaults(defineProps<CommentProps>(), {
   pageSize: 10,
-  height: '650px',
+  height: '515px',
 })
 
 const proxy: any = getCurrentInstance()?.proxy

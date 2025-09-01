@@ -14,3 +14,8 @@ export type ReplyProps = {
   content: ReplyData;
   isComment: boolean;
 }
+
+export type informationProps = {
+  pageSize: number;
+  active: boolean;
+}
