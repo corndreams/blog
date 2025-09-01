@@ -14,7 +14,7 @@
           </yk-tag>
           <yk-text type="danger" v-show="content.complaint">举报 {{ content.complaint }}</yk-text>
         </yk-space>
-        <IconDeleteOutline class="reply-main-tag-delete" />
+        <IconDeleteOutline class="reply-main-tag-delete" @click="deleteReply(content.id)" />
       </yk-space>
     </yk-space>
   </yk-space>
@@ -26,6 +26,12 @@ const props = withDefaults(defineProps<ReplyProps>(), {
   // content: () => ({}),
   isComment: true,
 });
+//defineEmits()声明事件
+const emits = defineEmits(["delete"])
+
+const deleteReply = (e:number) => {
+  emits("delete",e)
+}
 </script>
 
 <style lang="less" scoped>
@@ -59,8 +65,8 @@ const props = withDefaults(defineProps<ReplyProps>(), {
     flex-direction: column;
   }
 
-  &:hover{
-    .reply-main-tag-delete{
+  &:hover {
+    .reply-main-tag-delete {
       display: block;
     }
   }
