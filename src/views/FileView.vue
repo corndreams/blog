@@ -8,13 +8,13 @@
         </yk-space>
       </template>
     </title-bar>
+    <subset />
   </yk-space>
 </template>
 
 <script lang="ts" setup>
 import TitleBar from "@/components/bar/TitleBar.vue";
+import subset from "@/components/subset/subset.vue";
 </script>
 
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>

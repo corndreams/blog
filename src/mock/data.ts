@@ -64,8 +64,9 @@ export const survey = Mock.mock({
 
 })
 
+//评论
 export const comment = Mock.mock({
-  "code": 200,//200正常、300未通过token验证、500错误、400功能拒绝
+  "code": 200,
   "data": {
     "count": 123,
     "list|123": [{
@@ -83,5 +84,51 @@ export const comment = Mock.mock({
       "moment": "@datetime()",//时间
       "complaint|0-3": 0,//举报数
     }]
+  }
+})
+
+//文章状态
+export const state = Mock.mock({
+  "code": 200,//200正常、300未通过token验证、500错误、400功能拒绝
+  "data": [
+    {
+      "id": 0,
+      "name": "已发布",
+      "value|0-30": 4,
+    },
+    {
+      "id": 1,
+      "name": "未发布",
+      "value|0-30": 4,
+    }
+  ]
+})
+//分组
+export const subset = Mock.mock({
+  "code": 200,//200正常、300未通过token验证、500错误、400功能拒绝
+  "data": {
+    "count": 123,
+    "list": [
+      {
+        "id|": 0,
+        "name": "未分类",
+        "value": 1,
+      },
+      {
+        "id|": 0,
+        "name": "@ctitle(2,4)",
+        "value|0-30": 4,
+      },
+      {
+        "id|": 0,
+        "name": "@ctitle(2,4)",
+        "value|0-30": 4,
+      },
+      {
+        "id|": 0,
+        "name": "@ctitle(2,4)",
+        "value|0-30": 4,
+      }
+    ]
   }
 })
