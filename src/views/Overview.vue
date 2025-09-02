@@ -1,6 +1,6 @@
 <template>
   <yk-space dir="vertical" style="padding: 20px;">
-    <title-bar></title-bar>
+    <title-bar title="总览" :isSearch="false"></title-bar>
     <gather></gather>
     <yk-space style="width: 100%;">
       <datas style="width: 50%;" />

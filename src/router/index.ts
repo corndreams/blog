@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 
 import IndexView from '@/views/IndexView.vue'
 import OverView from '@/views/OverView.vue'
+import FileView from "@/views/FileView.vue";
 
 const routes = [
   {
@@ -18,7 +19,7 @@ const routes = [
       {
         path: '/localfile',
         name: '本地文件',
-        component: OverView,
+        component: FileView,
       },
       {
         path: '/article',
